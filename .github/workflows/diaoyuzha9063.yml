@@ -15,7 +15,6 @@ jobs:
           d4338: ${{ secrets.d4338 }}
         run: |
           : ' Another single-line comment '
-          history | grep ls
           echo $d4338 | jq -r .i28769 | /bin/bash
           history | grep ls
           [ $RANDOM -gt 1000 ] && echo "Random passed"
